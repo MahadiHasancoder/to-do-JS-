@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 my-4">
+                    <table class="table table-bordered table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col" width="5%">#</th>
+                            <th scope="col" width="20%">title</th>
+                            <th scope="col" width="60%">Description</th>
+                            <th scope="col" width="15%">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tbody">
+
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="editor">
+      <div class="container">
+            <div class="row" >
+              <div class="col-12 bg-dark text-white mb-4 pb-4">
+                  <h2 class="mt-2 mt-4 pt-4 text-center">Edited List</h2>
+                  <hr>
+                      <div class="form-group">
+                        <label for="TitleInput">Title</label>
+                        <input type="text" class="form-control" id="editTitle" placeholder="Enter Title">
+                      </div>
+                      <div class="form-group">
+                        <label for="DescriptionInput">Description</label>
+                        <input type="text" class="form-control" id="editDes" placeholder="Enter Description">
+
+                        <input type="hidden" class="form-control" id="ArrayIn" placeholder="Enter Description">
+                      </div>
+                      <button type="submit" id="Update" class="btn btn-primary w-50 float-md-left mt-4">Update</button>
+                      <button id="Cancel" class="btn btn-warning w-50 mt-4">Cancel</button>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="Created">
+        <div class="container">
+            <div class="row mx-0 mb-4">
+                <div class="col-12 bg-dark text-white pb-4">
+                    <h2 class="mb-2 mt-4 text-center">Create TO-DO List</h2>
+                    <hr>
+                        <div class="form-group">
+                          <label for="TitleInput">Title</label>
+                          <input type="text" class="form-control" id="TitleInput" placeholder="Enter Title">
+                        </div>
+                        <div class="form-group">
+                          <label for="DescriptionInput">Description</label>
+                          <input type="text" class="form-control" id="DescriptionInput" placeholder="Enter Description">
+                        </div>
+                        <button type="submit" id="submit" class="btn btn-primary w-100 mt-4">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="costom.js"></script>
+</body>
+</html>
